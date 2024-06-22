@@ -21,8 +21,9 @@
                 position: relative;
 
                 @media (max-width: 768px){
-                    font-size: 15px;
+                    max-width: 300px;
                 }
+
 
 
                 &::after {
@@ -34,8 +35,11 @@
                     display: flex;
                     align-items: center;
                     font-size: 40px;
-                    
-                  
+
+                    @media (max-width: 768px){
+                        right: -5px;
+                    }
+
                 }
             }
 
@@ -50,6 +54,7 @@
                 .faq__questions__item__question::after {
                     content: '-';
                 }
+
                 .faq__questions__item__answer {
                     height: auto;
                     padding-bottom: 24px;

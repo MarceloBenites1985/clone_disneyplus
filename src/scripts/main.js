@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
          if(posicaoAtual < alturaHero){
             ocultarElementosDoHeader();
          }else{
-            exibeElementoDoHeader();
+            exibeElementoDoHeader()
          }
 
     })
