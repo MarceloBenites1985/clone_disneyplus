@@ -6,6 +6,7 @@
     background-image: url(../images/hero_desktop.jpeg);
     text-align: center;
     background-size: cover;
+    margin-top: -120px;
 
     @media (max-width: 768px){
         background-image: url(../images/hero_celular.jpeg);
@@ -15,6 +16,15 @@
         margin-top: -55px;
     }
 
+    @media screen and  (min-width: 768px) and (max-width: 1023px){
+        background-image: url(../images/hero_tablet.jpg);
+        padding-top: calc(50vw + 25px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -81px;
+    }
+
+
     .button {
         margin-top: 2vw;
         margin-bottom: 8px;
@@ -22,6 +32,12 @@
 
     &__content {
         max-width: 540px;
+ 
+        @media screen and  (min-width: 768px) and (max-width: 1023px){
+            max-width: 960px;
+            width: 100%;
+            margin-top: -120px;
+    }
 
         &__branding{
             max-width: 320px;
@@ -29,6 +45,10 @@
 
             @media (max-width: 768px){
                 max-width: 180px;
+            }
+
+            @media screen and  (min-width: 768px) and (max-width: 1023px){
+                    max-width: 380px;
             }
         }
 
@@ -38,6 +58,11 @@
             @media (max-width: 768px){
                font-size: 25px;
             }
+
+            
+            @media screen and  (min-width: 768px) and (max-width: 1023px){
+                font-size: 35px;
+          }
         }
 
         p{
